@@ -80,7 +80,7 @@ public class Utilidades {
                 errorMismatch = false;
                 try {
                     System.out.println("¿Cuál es el peso de " + nombre[i] + "?");
-                    arrayPesos[i] = teclado.nextDouble();
+                    arrayPesos[i] = Math.abs(teclado.nextDouble());
                     
                 } catch (InputMismatchException ime) {
                     teclado.nextLine();
